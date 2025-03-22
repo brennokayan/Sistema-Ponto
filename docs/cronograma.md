@@ -5,7 +5,7 @@
 - [x] Definição de escopo
 - [x] Escolha das tecnologias
 - [x] Setup do repositório (GitHub)
-- [ ] Criação da estrutura inicial de pastas (backend + frontend)
+- [x] Criação da estrutura inicial de pastas (backend + frontend)
 - [ ] Documentação inicial (README, estrutura técnica)
 
 ## Fase 2 – Backend MVP
