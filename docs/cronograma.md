@@ -6,7 +6,7 @@
 - [x] Escolha das tecnologias
 - [x] Setup do repositório (GitHub)
 - [x] Criação da estrutura inicial de pastas (backend + frontend)
-- [ ] Documentação inicial (README, estrutura técnica)
+- [x] Documentação inicial (README, estrutura técnica)
 
 ## Fase 2 – Backend MVP
 🗓️ Período: 25 a 31 de Março  
