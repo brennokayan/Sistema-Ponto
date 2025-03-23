@@ -9,6 +9,44 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id        String   @id @default(cuid())
+  nome      String
+  email     String   @unique
+  senha     String
+  cargo     String
+  salario   Float
+  isAdmin   Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  pontos    Ponto[]
+  escalas   Escala[]
+}
+
+model Ponto {
+  id            String   @id @default(cuid())
+  userId        String
+  data          DateTime
+  entrada       DateTime?
+  almocoInicio  DateTime?
+  almocoFim     DateTime?
+  saida         DateTime?
+  observacao    String?
+
+  user          User     @relation(fields: [userId], references: [id])
+}
+
+model Escala {
+  id         String   @id @default(cuid())
+  userId     String
+  diaSemana  Int      // 0 (Domingo) a 6 (Sábado)
+  horaInicio String   // HH:mm (usamos string para simplicidade)
+  horaFim    String
+
+  user       User     @relation(fields: [userId], references: [id])
 }

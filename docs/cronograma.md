@@ -10,19 +10,19 @@
 
 ## Fase 2 – Backend MVP
 🗓️ Período: 25 a 31 de Março  
-- [ ] Configuração do Fastify com TypeScript
-- [ ] Configuração do Prisma + SQLite
-- [ ] Modelos e migrations (User, Ponto, Escala)
-- [ ] Autenticação JWT
-- [ ] Endpoints:
-  - [ ] POST /login
-  - [ ] POST /ponto
-  - [ ] GET /ponto/:userId
-  - [ ] CRUD /escalas
+- [x] Configuração do Fastify com TypeScript
+- [x] Configuração do Prisma + SQLite
+- [x] Modelos e migrations (User, Ponto, Escala)
+- [x] Autenticação JWT
+- [x] Endpoints:
+  - [x] POST /login
+  - [x] POST /ponto
+  - [x] GET /ponto/:userId
+  - [x] CRUD /escalas
 
 ## Fase 3 – Frontend MVP
 🗓️ Período: 1 a 7 de Abril  
-- [ ] Setup do Vite com React + TypeScript
+- [x] Setup do Vite com React + TypeScript
 - [ ] Tela de login
 - [ ] Tela do colaborador
 - [ ] Tela de administração (RH)
