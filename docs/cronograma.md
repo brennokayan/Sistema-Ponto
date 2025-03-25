@@ -23,7 +23,7 @@
 ## Fase 3 – Frontend MVP
 🗓️ Período: 1 a 7 de Abril  
 - [x] Setup do Vite com React + TypeScript
-- [ ] Tela de login
+- [x] Tela de login
 - [ ] Tela do colaborador
 - [ ] Tela de administração (RH)
 - [ ] Consumo da API via Axios
