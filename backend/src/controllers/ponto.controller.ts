@@ -3,7 +3,8 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 export async function createOuAtualizarPonto(request: FastifyRequest, reply: FastifyReply) {
-  const userId = (request.body as any).id;
+  console.log("request.user", request.user);
+  const userId = (request.user as any).id;
   const hoje = new Date();
   hoje.setHours(0, 0, 0, 0); // reseta a hora para comparar apenas a data
 
